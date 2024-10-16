@@ -1,44 +1,40 @@
-<?php 
+<?php
 
+class Buah {
+    private $warna;
 
-// define('NAMA', 'Galih Nurhuda');
-// echo NAMA;
+    public function makan() {
+        // kunyah
+        // nyam.. nyam.. nyam..
+    }
 
-// echo "<br>";
-
-// const UMUR = 32;
-// echo UMUR;
-
-
-// class Coba {
-//     const NAMA = 'Galih';
-// }
-
-// echo Coba::NAMA;
-
-// echo __FILE__;
-
-// function coba() {
-//     return __FUNCTION__;
-// }
-
-// echo coba();
-
-class Coba {
-    public $kelas = __CLASS__;
+    public function setWarna($warna) {
+        $this->warna = $warna;
+    }
 }
 
-$obj = new Coba;
-echo $obj->kelas;
+class Apel extends Buah {
+    public function makan() {
+        // kunyah
+        //sampai bagian tengah
+    } 
+}
 
+class Jeruk extends Buah {
+    public function makan() {
+        // kupas
+        // kunyah
+    }
+}
 
+// abstract class Buah {
+//     private $warna;
 
+//     abstract public function makan(); 
 
-
-
-
-
-
-
+//     public function setWarna($warna1) {
+//         $this->warna = $warna1;
+//     }
+// }
 
 ?>
